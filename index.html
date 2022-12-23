@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<h1 id="message">Bienvenue l'artiste</h1>
+    <div class="login-page">
+        <div class="form" id="form">
+          <form class="register-form">
+            <input id="username" data-type="nom" type="text" placeholder="name"/>
+            <span id="v_username">Rentrer la premiere lettre de son nom en majuscule</span>
+            <input id="pass" data-type="mot de passse" type="password" placeholder="password"/>
+            <span id="v_password">Minimum 8 caractère, une majuscule, et un chiffre</span>
+            <input id="email" data-type="email" type="text" placeholder="email address"/>
+            <span id="v_email">Verifier si l'adresse email a 1 "@" et un "."</span>
+            <input id="validat" onclick="validate()" value="create" type="button"/>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+</html>
